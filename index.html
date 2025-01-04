@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline | V!dy@</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .background-div{
+            margin: 20px;
+            padding: 10px;
+            height: 90vh;
+            width: 90vw;
+            background-color:#2b2423;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .main-line{
+            background-color: white;
+            width: 95%;
+            height: 2px;
+            position: relative;
+            top: 50%;
+            margin: auto;
+        }
+        
+        .circle{
+            
+            width: 10px;
+            height: 10px;
+            border-radius: 200px;
+            background-color:green;
+        }
+        .start-circle{
+            position: relative;
+            top: -3px;
+            background-color: white;
+        }
+
+        .end-circle{
+            position: relative;
+            left: 100%;
+            top: -28px;
+            background-color: white;
+        }
+
+        .project-point{
+            position: relative;
+            left: 20%;
+            top: -15px;
+            background-color: rgb(9, 223, 223);
+            border: 2px solid white;
+        }
+
+        .project-detail{
+            position: relative;
+            width: 200px;
+            height: 100px;
+            bottom: 105px ;
+            right: 90px;
+        }
+
+        .project-detail a{
+            text-decoration: none;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-div">
+        <h1>Timeline</h1>
+        <div class="main-line">
+            <div class="circle start-circle"></div>
+            <div class="circle project-point">
+                <div class="project-detail">
+                    <h1><a href="/projects/calculator.html">Calculator</a></h1>
+                    <p>This website is build when I was learning javascript</p>
+                </div>
+            </div>
+            <div class="circle end-circle"></div>
+        </div>
+    </div>
+</body>
+</html>
