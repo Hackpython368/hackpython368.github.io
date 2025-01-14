@@ -1,0 +1,379 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    width: 100%;
+}
+
+
+nav{
+    padding: 1vw 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(221, 231, 255);
+}
+
+#logo-child{
+    font-size: 3vw;
+}
+
+#btn-child{
+    display: flex;
+    gap: 2vw;
+}
+
+#btn-child h4{
+    opacity: 0.8;
+    font-size: 1vw;
+    padding: 0.2vw 0.8vw;
+    border: 0.01vw solid rgb(59, 58, 58);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#btn-child h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    right: -100%;
+    transition: all ease 0.5s;
+    border-radius: 20px 0px 0px 20px;
+    background-color: black;
+}
+
+#btn-child h4:hover::after{
+    right: 0%;
+    border-radius: 0px;
+}
+
+#btn-child h4 a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 9;
+}
+
+#btn-child h4 a:hover{
+    color: white;
+}
+
+#hero{
+    height: 80vh;
+    background-color: #c9c3c3;
+    display: flex;
+}
+
+#main-hero-section{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(196, 209, 196);
+    border-radius: 20px;
+    display: flex;
+}
+
+#hero-text{
+    width: 50%;
+    align-content: center;
+    margin: 2vw;
+}
+
+#hero-text h1{
+    font-size: 2.7vw;
+}
+
+#hero-text h5{
+    font-size: 1.6vw;
+}
+
+#hero-image{
+    width: 50%;
+    display: flex;
+    position: relative;
+}
+
+#first-image{
+    position:absolute;
+    top: 10vw;
+    left: 3vw;
+    height: 60%;
+    width: 85%;
+    border-radius: 20px;
+    transform: rotate(2deg);
+    margin: auto;
+    align-content: center;
+    background-color: blueviolet;
+}
+
+#second-image{
+    position: absolute;
+    top: 10vw;
+    left: 3vw;
+    height: 60%;
+    width: 85%;
+    border-radius: 20px;
+    transform: rotate(-2deg);
+    margin: auto;
+    align-content: center;
+    background-color: green;
+}
+
+#third-image{
+    position: absolute;
+    top: 10vw;
+    left: 3vw;
+    height: 60%;
+    width: 85%;
+    border-radius: 20px;
+    margin: auto;
+    align-content: center;
+    background-image: url('Images/image.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#about{
+    background-image: url('Images/about.svg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#page-count{
+    position: relative;
+    margin: 0vw 4vw;
+    height: 40vh;
+    background-size: 13vw 13vw;
+}
+
+.first-page{
+    background-image: url('Images/01.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.second-page{
+    background-image: url('Images/02.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.text-left{
+    color: white;
+    margin: 1.5vw 6vw;
+    text-align: left;
+    font-size: 1vw;
+}
+
+.text-center{
+    color: white;
+    margin: 4vw 0px;
+    text-align: center;
+    font-size: 1vw;
+}
+
+#project-container{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3vw;
+    padding: 3vw;
+    background-color: #D9D9D9;
+    position: relative;
+}
+
+#horizontal-row{
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+#item1{
+    grid-row: 1/3;
+    grid-column: 1/3;
+    background-image: url("Images/netflix.png");
+    background-size: cover;
+    background-position: center center;
+    border: 5px solid #D9D9D9;
+}
+
+#item2{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background-image: url("Images/Bouncing Ball.png");
+    background-size: cover;
+    background-position: center center;
+    border: 5px solid #D9D9D9;
+}
+
+#item3{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    background-image: url("Images/Clock.png");
+    background-size: cover;
+    background-position: center center;
+    border: 5px solid #D9D9D9;
+}
+
+#item4{
+    grid-row: 2/4;
+    grid-column: 3/4;
+    background-image: url("Images/simplecalculator.png");
+    background-size: cover;
+    background-position: center center;
+    border: 5px solid #D9D9D9;
+}
+
+#item1:hover{
+    border: 5px solid black;
+}
+
+#item2:hover{
+    border: 5px solid black;
+}
+
+#item3:hover{
+    border: 5px solid black;
+}
+
+#item4:hover{
+    border: 5px solid black;
+}
+
+
+.third-page{
+    background-image: url('Images/03.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+#contact{
+    background-image: url("Images/contact.jpg");
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+#contact-container{
+    display: flex;
+    height: 50%;
+    padding-bottom: 5vw;
+}
+
+#contact-container #left{
+    margin: 0px 5vw;
+    height: 60%;
+    width: 50%;
+    background-color: #383535;
+}
+
+#contact-container #right{
+    margin: 0px 5vw;
+    height: 80%;
+    width: 50%;
+}
+
+#left input{
+    font-size: 1vw;
+    margin: 2.4vw;
+    padding: 0.3vw;
+    display: block;
+    color: black;
+    font-weight: bolder;
+    width: 80%;
+    border: none;
+    border-radius: 0.4vw;
+}
+
+#message{
+    font-size: 1vw;
+    margin: 2.4vw;
+    padding: 0.3vw;
+    display: block;
+    color: black;
+    font-weight: bolder;
+    width: 80%;
+    border: none;
+    border-radius: 0.4vw;
+    max-width: 80%;
+    height: 4vw;
+    max-height: 4vw;
+}
+
+#left button{
+    font-size: 1vw;
+    margin: 2.4vw;
+    padding: 0.3vw;
+    display: block;
+    border: none;
+    border-radius: 0.4vw;
+    background-color: rgb(9, 235, 9);
+
+}
+
+#right h1{
+    padding: 0.5vw;
+    font-size: 3vw;
+}
+
+#right p{
+    padding: 0.5vw;
+    font-size: 1.2vw;
+}
+
+footer{
+    display: block;
+    width: 100%;
+    background-color: rgb(15, 14, 14);
+    color: white;
+    text-align: center;
+}
+
+footer h1 a{
+    text-decoration: none;
+    color: rgb(126, 124, 124);
+}
+
+footer h1{
+    font-size: 1vw;
+}
+
+@media only screen and (max-width:450px){
+    #hero{
+        height: fit-content;
+    }
+
+    #hero-image{
+        width: 50vw;
+        height: 40vw;
+    }
+
+    .text-center{
+        padding-bottom: 4vw;
+    }
+
+    #about{
+        height:fit-content;
+    }
+
+    #page-count{
+        height: 20vw;
+    }
+
+    #horizontal-row{
+        height:20vh;
+    }
+
+    #contact{
+        height: fit-content;
+    }
+}

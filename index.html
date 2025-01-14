@@ -1,89 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timeline | V!dy@</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-
-        .background-div{
-            margin: 20px;
-            padding: 10px;
-            height: 90vh;
-            width: 90vw;
-            background-color:#2b2423;
-            border-radius: 20px;
-            text-align: center;
-        }
-
-        .main-line{
-            background-color: white;
-            width: 95%;
-            height: 2px;
-            position: relative;
-            top: 50%;
-            margin: auto;
-        }
-        
-        .circle{
-            
-            width: 10px;
-            height: 10px;
-            border-radius: 200px;
-            background-color:green;
-        }
-        .start-circle{
-            position: relative;
-            top: -3px;
-            background-color: white;
-        }
-
-        .end-circle{
-            position: relative;
-            left: 100%;
-            top: -28px;
-            background-color: white;
-        }
-
-        .project-point{
-            position: relative;
-            left: 20%;
-            top: -15px;
-            background-color: rgb(9, 223, 223);
-            border: 2px solid white;
-        }
-
-        .project-detail{
-            position: relative;
-            width: 200px;
-            height: 100px;
-            bottom: 105px ;
-            right: 90px;
-        }
-
-        .project-detail a{
-            text-decoration: none;
-            color: green;
-        }
-    </style>
+    <title>Portfolio | V!dy@</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div class="background-div">
-        <h1>Timeline</h1>
-        <div class="main-line">
-            <div class="circle start-circle"></div>
-            <div class="circle project-point">
-                <div class="project-detail">
-                    <h1><a href="/projects/calulator.html">Calculator</a></h1>
-                    <p>This website is build when I was learning javascript</p>
+    <div id="wraper-container">
+        <div id="main-container">
+            <nav>
+                <div id="logo-child">Portfolio</div>
+                <div id="btn-child">
+                    <h4><a href="#about">About</a></h4>
+                    <h4><a href="#my-work">My Work</a></h4>
+                    <h4><a href="#contact">Contact</a></h4>
+                </div>
+            </nav>
+
+            <div id="hero">
+                <div id="main-hero-section">
+                    <div id="hero-text">
+                        <h1>My name is Vidya Prakash Pandey</h1>
+                        <h5>I'm Full-Stack Developer</h5>
+                    </div>
+                    <div id="hero-image">
+                        <div id="first-image"></div>
+                        <div id="second-image"></div>
+                        <div id="third-image"></div>
+                    </div>
                 </div>
             </div>
-            <div class="circle end-circle"></div>
+
+            <div id="about">
+                <div id="page-count" class="first-page">
+                </div>
+                <div class="about-text-content">
+                    <p class="text-left">Hello! I'm Vidya Prakash Pandey, an aspiring and passionate programmer who
+                        thrives on solving challenges and bringing ideas to life through technology. My journey into the
+                        world of programming began with Python, and since then, I've expanded my skills to include
+                        languages like C and JavaScript, with a growing interest in frameworks like Flask.I have always
+                        been fascinated by how technology can simplify complex problems, and this fascination drives me
+                        to continuously learn and innovate. From creating a simple calculator to designing a Library
+                        Management System using Python's tkinter module, every project I've undertaken has been a step
+                        toward mastering the art of programming. Recently, I developed a Python program that automates
+                        sending birthday wishes via WhatsApp—an idea born from my passion for building meaningful tools
+                        that make life easier.</p>
+
+                    <p class="text-left">Outside the technical realm, I enjoy exploring creative problem-solving and
+                        building solutions that resonate with real-world needs. My portfolio reflects my journey,
+                        showcasing projects that combine functionality with creativity.I believe in lifelong learning
+                        and am always eager to explore new technologies. My current focus is on web development, and I'm
+                        excited to create dynamic and engaging applications that provide great user experiences.</p>
+
+                    <p class="text-left">Through this portfolio, I aim to share my story, skills, and passion with you.
+                        Whether you're here to collaborate, learn, or simply explore, I hope you find value in my work
+                        and insights.</p>
+
+                    <p class="text-center">Thank you for visiting, and feel free to reach out through the Contact
+                        section—I’d love to connect!</p>
+                </div>
+            </div>
+
+
+            <div id="my-work">
+                <div id="page-count" class="second-page">
+                </div>
+
+                <div id="project-container">
+                    <div id="horizontal-row">
+                        <div id="item1" class="item"></div>
+                        <div id="item2" class="item"></div>
+                        <div id="item3" class="item"></div>
+                        <div id="item4" class="item"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="contact">
+                <div id="page-count" class="third-page">
+                </div>
+
+                <div id="contact-container">
+                    <div id="left">
+                        <input type="text" placeholder="Name">
+
+                        <input type="text" placeholder="Email">
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </div>
+                    <div id="right">
+                        <h1>Feel Free To Reach Out</h1>
+                        <p>Have a question, an idea, or just want to connect? I’d love to hear from you! Whether you're looking to collaborate on a project, need help with programming, or simply want to discuss tech and creativity, feel free to reach out.</p>
+
+                        <p>
+                            You can use the form on this page to send me a message directly. I’m always open to opportunities and discussions that spark innovation and growth.</p>
+
+                        <p>
+                            Let’s create something amazing together!</p>
+                    </div>
+
+                </div>
+                <footer>
+                    <h1>All right Reserved.</h1>
+                    <h1>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </h1>
+                </footer>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
