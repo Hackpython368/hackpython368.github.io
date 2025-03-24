@@ -133,7 +133,7 @@ nav{
     border-radius: 20px;
     margin: auto;
     align-content: center;
-    background-image: url('Images/image.jpg');
+    background-image: url('image.jpg');
     background-size:cover;
     background-repeat: no-repeat;
 }
