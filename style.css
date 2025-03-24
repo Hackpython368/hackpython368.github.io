@@ -134,7 +134,8 @@ nav{
     margin: auto;
     align-content: center;
     background-image: url('image.jpg');
-    background-size:center center;
+    background-size:cover;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
